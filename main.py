@@ -13,6 +13,7 @@ class LinearLayer:
 
     def forward(self, x):
         self.input = x
+        #print(f"X from linear layer = {x}")
         return np.dot(x, self.weights) + self.bias
 
     def backward(self, grad_output):
@@ -84,12 +85,18 @@ class ReLU:
 
 
 def main():
+    # Setting seed so the random function will return same random sequence
+    # Random is used when generating init matric of weights
+    np.random.seed(25)
     X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-    X = X * 2 - 1
     y_true = np.array([[0], [1], [1], [0]])
+    # Normalisation of the X array, since as first activation function we are using Tanh,
+    X = X * 2 - 1
     layers = [
         LinearLayer(2, 4),
         Tanh(),
+        # LinearLayer(4, 4),
+        # ReLU(),
         LinearLayer(4, 1),
         Sigmoid()
     ]
@@ -100,17 +107,20 @@ def main():
     y_pred = None
     for epoch in range(epochs):
         y_pred = model.forward(X)
+        #print(X)
         loss = loss_function.forward(y_pred, y_true)
         grad_loss = loss_function.backward()
         model.backward(grad_loss)
         for layer in model.layers:
             if hasattr(layer, 'update_params'):
                 layer.update_params(learning_rate)
-        print(f"Epoch number = {epoch}")
+        print(f"Epoch number = {epoch} with loss = {loss}")
+
     X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+    y_pred_rounded = (y_pred > 0.5).astype(int)
     i = 0
     for x in X:
-        print(f"With input {x} prediction = {y_pred[i]}")
+        print(f"With input {x} prediction = {y_pred_rounded[i]} and with raw prediction = {y_pred[i]}")
         i += 1
 
 

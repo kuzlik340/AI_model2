@@ -61,7 +61,7 @@ And backward looks like this: $$\frac{d}{dx} \tanh(x) = 1 - \tanh^2(x)$$
 
     return grad_output * (1 - self.output ** 2)
 
-![Tanh graphic](Tanh.png){#fig:enter-label width="50%"}
+![Tanh](https://github.com/user-attachments/assets/e04bfa49-1818-47bb-b5bf-e68c6ef30dcd)
 
 ## Sigmoid - activation function
 
@@ -72,7 +72,8 @@ behavior can result in many zeros in the output, which in turn may lead
 to numerous zeros in the gradients, preventing the weights from updating
 effectively.
 
-![Sigmoid graphic](Sigmoid.png){#fig:enter-label width="50%"}
+![Sigmoid](https://github.com/user-attachments/assets/342f5ba5-ed5d-4479-81c6-2b57a7778629)
+
 
 In the code forward function of sigmoid is this:
 
@@ -95,7 +96,8 @@ $$\text{ReLU}(x) = \max(0, x)$$
 But because of this simplicity, ReLU may have the same problem as
 sigmoid if we have too many numbers that are less than 0's.
 
-![Relu graphic](ReLU.png){#fig:enter-label width="50%"}
+![ReLU](https://github.com/user-attachments/assets/031a7e70-0cf3-4f73-a7b1-09d4a33483fe)
+
 
 In the code, the forward function of ReLU is defined as:
 
@@ -308,18 +310,18 @@ appropriate boundaries for this task. Please note that all graphs below
 are for the XOR problem:
 
 <figure id="fig:tournament">
-<p><img src="with_momentum_001.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/7083314e-25a8-4b47-8d1b-7644b74e4ef0" alt="image" /> <span
 id="fig:roullette" data-label="fig:roullette"></span></p>
-<p><img src="without_momentum_001.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/0f82cc74-e37d-46d6-804c-9360635b6682" alt="image" /> <span
 id="fig:tournament" data-label="fig:tournament"></span></p>
 </figure>
 
 Here are the same graphs but for the learning rate 0.02:
 
 <figure id="fig:tournament">
-<p><img src="without_momentum_0002.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/cc2ef91e-b7b4-4977-a173-0693255637ab" alt="image" /> <span
 id="fig:roullette" data-label="fig:roullette"></span></p>
-<p><img src="with_momentum_0002.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/f8cca8e8-f8ca-4a69-9cc6-eefd579895d9" alt="image" /> <span
 id="fig:tournament" data-label="fig:tournament"></span></p>
 </figure>
 

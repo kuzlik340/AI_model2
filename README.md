@@ -328,16 +328,16 @@ id="fig:tournament" data-label="fig:tournament"></span></p>
 Here are same graphs but for the model with 2 hidden layers:
 
 <figure id="fig:tournament">
-<p><img src="2with_momentum_001.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/2f3d6da6-3be0-40fe-9dbf-541da1cb6396" alt="image" /> <span
 id="fig:roullette" data-label="fig:roullette"></span></p>
-<p><img src="2without_momentum_001.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/d71f6af0-e802-4d16-a9da-b4f8f50f2978" alt="image" /> <span
 id="fig:tournament" data-label="fig:tournament"></span></p>
 </figure>
 
 <figure id="fig:tournament">
-<p><img src="2without_momentum_0002.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/c6aa2f8b-1022-4244-b749-34c95c383daa" alt="image" /> <span
 id="fig:roullette" data-label="fig:roullette"></span></p>
-<p><img src="2with_momentum_0002.png" alt="image" /> <span
+<p><img src="https://github.com/user-attachments/assets/fafcb6de-eeaf-49b9-b408-23f0c934fe57" alt="image" /> <span
 id="fig:tournament" data-label="fig:tournament"></span></p>
 </figure>
 
